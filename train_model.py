@@ -1,4 +1,7 @@
-import pandas as pd
+
+# Fraud Message / Email Detector
+# AI Club Summer Project 2026
+# Model Training Scriptimport pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
