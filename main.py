@@ -14,7 +14,9 @@ def home():
 
     if request.method == "POST":
 
-        message = request.form["message"]
+        message = request.form.get("message")
+        if not message.strip():
+    return render_template("index.html", result="Please enter a message.")
 
         data = vectorizer.transform([message])
 
