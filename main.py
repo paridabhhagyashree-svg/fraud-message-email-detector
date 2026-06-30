@@ -42,5 +42,32 @@ def home():
     )
 
 
+# ==========================
+# ABOUT PAGE
+# ==========================
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+
+# ==========================
+# FEATURES PAGE
+# ==========================
+
+@app.route("/features")
+def features():
+    return render_template("features.html")
+
+
+# ==========================
+# CONTACT PAGE
+# ==========================
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
